@@ -7,6 +7,7 @@ export default function App() {
         <div className="app">
             {jokesData.map((item) => {
                 return <Joke 
+                    key={item.id}
                     setup={item.setup}
                     answer={item.answer}
                 />
